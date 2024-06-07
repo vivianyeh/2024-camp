@@ -1,0 +1,33 @@
+$primary: #000000;
+$primary-50: #FFFFFF;
+$primary-100: #FAFAFA;
+$primary-200: #F1F1F1;
+$primary-300: #E9E9E9;
+$primary-400: #C1C1C1;
+$primary-500: #919191;
+$primary-600: #5B5B5B;
+$primary-700: #3B3B3B;
+$primary-800: #1E1E1E;
+
+$font-family: "Noto Sans TC", sans-serif;
+$font-size-base: 1rem !default;
+$line-height-base: 1.5 !default;
+$max-width: 1296px;
+$colors: (
+    "primary": $primary,
+    "primary-50": $primary-50,
+    "primary-100": $primary-100,
+    "primary-200": $primary-200,
+    "primary-300": $primary-300,
+    "primary-400": $primary-400,
+    "primary-500": $primary-500,
+    "primary-600": $primary-600,
+    "primary-700": $primary-700,
+    "primary-800": $primary-800,
+);
+
+@each $name, $color in $colors {
+    .#{$name} {
+        color: $color;
+    }
+}

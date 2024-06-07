@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+    header {
+        padding: 0;
+    }
+
+    .wrap {
+        padding: 8px 12px;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 40px 0;
+        transition: .1s;
+    }
+
+    .open li {
+        display: flex;
+    }
+
+    .close {
+        padding: 0;
+
+        li {
+            display: none;
+            padding: 0;
+        }
+    }
+
+
+    .banner {
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .quote-section {
+        position: static;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .right-quote {
+        display: none;
+    }
+
+    .left-quote {
+        position: static;
+        width: 64px;
+        margin: 0 auto;
+    }
+
+    .slogan {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 0 37.5px;
+
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+    }
+
+    .exp-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 235px;
+    }
+
+    .footer {
+        background-image: url("images/footer-bg-sm.png");
+        padding: 40px 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+
+        &-section {
+            gap: 40px;
+            justify-content: center;
+        }
+
+        &-info {
+            text-align: center;
+
+            p {
+
+                font-size: $font-size-base;
+            }
+        }
+
+    }
+}

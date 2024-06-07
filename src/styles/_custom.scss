@@ -1,0 +1,273 @@
+header {
+    border-bottom: 1px solid $primary-200;
+    background-color: $primary-50 ;
+    padding: 28px 0px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $max-width;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu {
+    justify-content: space-between;
+    gap: 40px;
+
+    li {
+        padding: 4px 8px;
+
+        a.active,
+        a:hover {
+            font-weight: bold;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border: 1px solid $primary-500;
+                box-sizing: border-box;
+                -webkit-box-reflect: below 16px;
+                margin-top: -4px;
+                border-bottom: none;
+            }
+
+            &::before {
+                margin-left: -8px;
+                border-right: none;
+            }
+
+            &::after {
+                border-left: none;
+            }
+
+
+        }
+    }
+
+
+}
+
+.logo-block {
+    margin-right: 90px;
+}
+
+.banner {
+    background-color: $primary-100 ;
+    gap: 24px;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.left-quote {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-quote {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.slogan {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 59px 71px;
+    gap: 16px;
+
+    p {
+        font-size: 24px;
+    }
+
+    span {
+        position: relative;
+        z-index: 0;
+        white-space: nowrap;
+    }
+
+    .mark {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+.exp-section {
+    display: flex;
+    justify-content: center;
+    max-width: 636px;
+    text-wrap: wrap;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.exp-card {
+    display: flex;
+
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+
+    hr {
+        margin-top: 2;
+        width: 24px;
+        color: $primary-400;
+        border-width: 2px;
+        border-style: solid;
+    }
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 120px 0;
+    gap: 72px;
+}
+
+.card-section {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 12px;
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #f1f1f1;
+    }
+
+    ul {
+        display: flex;
+        margin-top: 24px;
+
+        li {
+            border-radius: 16px;
+            background: $primary-200;
+            padding: 4px 12px;
+            color: $primary-700;
+            margin-right: 10px;
+        }
+    }
+
+    &-info {
+        margin-left: 8px;
+        margin-top: 16px;
+    }
+}
+
+.paginations {
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 2px 13px;
+
+    .page {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        font-size: 24px;
+        line-height: 36px;
+        color: $primary-700;
+
+        &:hover,
+        &.active {
+            background: $primary;
+            color: $primary-50;
+        }
+
+    }
+}
+
+.footer {
+    background-image: url("images/footer-bg-lg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    border-top: 1px solid #FAFAFA;
+
+    &-section {
+        padding: 80px 0;
+    }
+
+    &-info {
+        max-width: 686px;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    &-list {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        img {
+            width: 56px;
+            height: 56px;
+        }
+
+        .contact {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            background-color: $primary-50;
+            border: 1px solid $primary-400;
+            color: $primary-700;
+            padding: 8px 24px;
+            max-width: 306px;
+            border-radius: 8px;
+            gap: 8px;
+
+            p {
+                margin-left: 8px;
+            }
+        }
+
+        .form {
+            background: $primary;
+            color: $primary-50;
+        }
+
+
+    }
+}

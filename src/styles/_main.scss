@@ -1,0 +1,83 @@
+body {
+    font-family: $font-family;
+    color: $primary;
+    line-height: $line-height-base;
+    font-size: $font-size-base;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.fs-2 {
+    font-size: $font-size-base * 2;
+}
+
+.fs-3 {
+    font-size: $font-size-base * 1.75;
+}
+
+.fs-4 {
+    font-size: $font-size-base * 1.5;
+}
+
+.fs-5 {
+    font-size: $font-size-base * 1.25;
+}
+
+.fs-6 {
+    font-size: $font-size-base ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-1 {
+    background-color: aqua;
+}
+
+.bg-2 {
+    background-color: rgb(218, 209, 37);
+}
+
+.bg-3 {
+    background-color: rgb(93, 7, 214);
+}
+
+.bg-4 {
+    background-color: rgb(214, 7, 76);
+}
