@@ -1,5 +1,5 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import Protfolio from "./pages/Portfolio";
+import Protfolio from "./pages/Portfolio.tsx";
 
 function App() {
   return (<>
